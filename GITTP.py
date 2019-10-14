@@ -102,7 +102,7 @@ def gameParameters():
  
 
 """Give a name and make comments"""
-
+#ma parti
 def master():
 
     nbC,nbP,nbTry = gameParameters()
