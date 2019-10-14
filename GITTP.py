@@ -47,25 +47,25 @@ def evaluation(selected,cache):
 
     copySelected,copyCache = list(selected),list(cache)
 
-    for i in range(len(cache):
+    for i in range(len(cache)):
 
         if copySelected[i] == copyCache[i]:
 
             WellPut += 1
 
-            copySelected[i],copyCache[i] = -1,-1
+            copySelected[i],copyCache[i] == -1,-1
 
     for i in range(len(cache)):
 
-        for j on range(len(cache)):
+        for j in range(len(cache)):
 
             if (copySelected[i] == copyCache[j]) and (copySelected[i] != -1):
 
                 Misplaced += 1
 
-                copySelected[i],copyCache[j] = -1,-1
+                copySelected[i],copyCache[j] == -1,-1
 
-    retun WellPut,Misplaced
+    return WellPut,Misplaced
 
  
 
@@ -77,17 +77,17 @@ def display(well,bad):
 
  
 
-"""Give a name and make comments"""
+#Afficher le mot caché
 
 def displayCache(cache):
 
-    for x on cache:
+    for x in cache:
 
         print(x,end='')
 
  
 
-"""Give a name and make comments"""
+#Parametres: nombre de couleur, longueur de la séquence, nombre d'essai
 
 def gameParameters():
 
@@ -155,7 +155,7 @@ def chooseGame(S,possibles,results,tries):
 
     elif len(S)==1 
 
-        retrn S.pop()
+        return S.pop()
 
     else:
 
@@ -255,7 +255,7 @@ def game():
 
         print("lost, we had to find:",end=' ')
 
-        displyCache(cache)
+        displayCache(cache)
 
     else:
 
