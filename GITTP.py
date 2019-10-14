@@ -78,17 +78,17 @@ def display(well,bad):
 
  
 
-"""Give a name and make comments"""
+#Afficher le mot caché
 
 def displayCache(cache):
 
-    for x on cache:
+    for x in cache:
 
         print(x,end='')
 
  
 
-"""Give a name and make comments"""
+#Parametres: nombre de couleur, longueur de la séquence, nombre d'essai
 
 def gameParameters():
 
