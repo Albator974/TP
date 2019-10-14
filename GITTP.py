@@ -13,7 +13,7 @@ def initCache(nbColors=6,nbPawns=4):
 def choose(nbColors=6,nbPawns=4):
 
     nocorrect = True
-
++
     while nocorrect:
 
         nocorrect = False
@@ -103,7 +103,7 @@ def gameParameters():
  
 
 """Give a name and make comments"""
-
+#ma parti
 def master():
 
     nbC,nbP,nbTry = gameParameters()
@@ -122,7 +122,7 @@ def master():
 
         well,bad = evaluation(chose(nbC,nbP),cache)
 
-        display(well,bad)
+        display (well,bad)
 
         if well == nbP:
 
@@ -148,7 +148,7 @@ def master():
 
 """Give a name and make comments"""
 
-def chooseGame(S,possibles,results,tries):
+def chooseGame('S,possibles,results,tries'):
 
     if tries=1:
 
