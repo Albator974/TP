@@ -1,11 +1,10 @@
-from random import randnt
+
+from random import randint
 
 """Give a name and make comments"""
 
 def initCache(nbColors=6,nbPawns=4):
-
-    retrn [randint(1,nbColors) for i in range(nbPawns)]
-
+    return [randint (1,nbColors) for i in range(nbPawns)]
  
 
 """Give a name and make comments"""
@@ -20,19 +19,19 @@ def choose(nbColors=6,nbPawns=4):
 
         selected = input('Input your proposal: ')
 
-        if len(selecte) == nbPawns:
+        if len(selected) == nbPawns:
 
             selected = [int(x) for x in list(selected)]
 
             for x in selected:
 
-                if (x<1) or (x>nbColor):
+                if (x<1) or (x>nbColors):
 
                     nocorrect = True
 
         else:
 
-            ncorrect = True
+            nocorrect.correct = True
 
     return selected
 
@@ -48,25 +47,25 @@ def evaluation(selected,cache):
 
     copySelected,copyCache = list(selected),list(cache)
 
-    for i in range(len(cache):
+    for i in range(len(cache)):
 
         if copySelected[i] == copyCache[i]:
 
             WellPut += 1
 
-            copySelected[i],copyCache[i] = -1,-1
+            copySelected[i],copyCache[i] == -1,-1
 
     for i in range(len(cache)):
 
-        for j on range(len(cache)):
+        for j in range(len(cache)):
 
             if (copySelected[i] == copyCache[j]) and (copySelected[i] != -1):
 
                 Misplaced += 1
 
-                copySelected[i],copyCache[j] = -1,-1
+                copySelected[i],copyCache[j] == -1,-1
 
-    retun WellPut,Misplaced
+    return WellPut,Misplaced
 
  
 
